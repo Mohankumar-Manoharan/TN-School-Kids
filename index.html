@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TN Happy Kids | Play School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            padding: 20px;
+            color: white;
+            background: #063864;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            padding: 0 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .hero {
+            background: url("https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80") no-repeat center center/cover;
+            height: 70vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .hero h2 {
+            font-size: 2.6rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.6);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 2px 3px rgb(0, 0, 0, 0.6);
+            font-weight: 400;
+        }
+        
+        .btn {
+            background: #5891d1;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            padding: 12px 20px;
+        }
+        
+        .btn:hover {
+            background: #3060b8;
+        }
+        
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .Programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .card {
+            background: #84afe1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            background: #426dbc;
+        }
+        
+        .branch-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            justify-items: center;
+        }
+        
+        .branch-card {
+            background: #84afe1;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            font-size: 1rem;
+            width: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .branch-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>TN Happy Kids</h1>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Programs">Programs</a>
+            <a href="#Branches">Branches</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero" id="Home">
+        <h2 class="hero-text">Welcome to TN Happy Kids</h2>
+        <p>India’s First Online Monitoring Play School</p>
+        <a href="#Programs" class="btn">Explore Programs</a>
+
+    </div>
+    <div class="section" id="About">
+        <h2>About Us</h2>
+        <p>TN Happy Kids is a play school that focuses on fun learning, safety, and parental involvement through live monitoring.</p>
+    </div>
+    <div class="section" id="Programs">
+        <h2>Our Programs</h2>
+        <div class=" Programs ">
+            <div class="card ">Infant Care</div>
+            <div class="card ">Toddler</div>
+            <div class="card ">Preschool</div>
+            <div class="card ">LKG</div>
+            <div class="card ">Daycare</div>
+            <div class="card ">UKG</div>
+        </div>
+    </div>
+    <div class="section" id="Branches">
+        <h2>Our Branches</h2>
+        <div class="branch-cards">
+            <div class="branch-card">📍 <strong>Coimbatore:</strong> No.20, Kalianna Gounder St, K.K.Pudur, Saibaba Colony, Near Kannan Store</div>
+            <div class="branch-card">📍 <strong>Pollachi:</strong> No:11, PKS Colony, Jothi Nagar</div>
+            <div class="branch-card">📍 <strong>Chennai (Kolathur):</strong> No 18, 1st Main Road, Srinivasa Nagar, Kolathur</div>
+            <div class="branch-card">📍 <strong>Chennai (Tambaram West):</strong> Plot No 105, Vasantham Nagar, Kishkinta Main Road</div>
+            <div class="branch-card">📍 <strong>Tirupur:</strong> 697, B/1 Munniyapan Kovil Street, Near A2B Hotels PN Road</div>
+            <div class="branch-card">📍 <strong>Erode:</strong> 37/2 No 1 Vinayaga Residency, Kumilamparappu Pirivu, Chithode</div>
+        </div>
+    </div>
+    <div class="section" id="Contact">
+        <h2>Contact Us</h2>
+        <p>📞 1800-419-7898 | ✉️ admission@tnhappykids.in</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TN Happy Kids | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
